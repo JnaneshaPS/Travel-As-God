@@ -10,7 +10,7 @@ import axios from 'axios';
         tr_latitude: ne.lat,
       },
       headers: {
-        'x-rapidapi-key': '06500835f2msh4780f3394b12136p12fd95jsn6daac97a1e16',
+        'x-rapidapi-key': .process.env.rapidapi.open place app,
         'x-rapidapi-host': 'travel-advisor.p.rapidapi.com',
       },
     });
@@ -28,7 +28,7 @@ import axios from 'axios';
       const { data } = await axios.get('https://community-open-weather-map.p.rapidapi.com/find', {
         params: { lat, lon: lng },
         headers: {
-          'x-rapidapi-key': '06500835f2msh4780f3394b12136p12fd95jsn6daac97a1e16',
+          'x-rapidapi-key': '.process.env.rapidapi.open weather app',
           'x-rapidapi-host': 'community-open-weather-map.p.rapidapi.com',
         },
       });
