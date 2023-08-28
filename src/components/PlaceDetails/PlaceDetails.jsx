@@ -54,7 +54,7 @@ const PlaceDetails = ({place,refProp,selected}) => {
          )}
          <CardActions>
           <Button size='small' color='primary' onClick={()=>window.open(place.web_url,'_blank')  
-            }>Trip advtiser</Button>
+            }>Trip ad</Button>
             <Button size='small' color='primary' onClick={()=>window.open(place.website,'_blank')  
             }>WEbsite</Button>
          </CardActions>
