@@ -35,7 +35,7 @@ const List = ({places,childClicked,isLoading,type,setType,rating,setRating}) => 
     <Select value={type} onChange={(e)=>setType(e.target.value)}>
         <MenuItem value='resturants'>Resturants</MenuItem>
         <MenuItem value='hotels'>Hotels</MenuItem>
-        <MenuItem value='popular'>Popular Places</MenuItem>
+        <MenuItem value='popular'>popular places</MenuItem>
     </Select>
    </FormControl>
    <FormControl  className={classes.formControl}>
@@ -48,7 +48,7 @@ const List = ({places,childClicked,isLoading,type,setType,rating,setRating}) => 
     </Select>
    </FormControl>
    <Grid container spacing={3} className={classes.list}>
-    {places?.map(
+    {places?.map(6
     (
       <Grid ref={elRefs[i]} key={i} item xs={12}>
       <PlaceDetails selected={Number(childClicked) === i} refProp={elRefs[i]} place={place} />
